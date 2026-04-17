@@ -22,7 +22,7 @@ Error analysis:
 - Error ratios for step-size refinement
 ### 2. Crank–Nicolson Method
 - Second-order implicit scheme
-- Nonlinear solver with tolerance 1e-6
+- Nonlinear solver with tolerance $10^{-6}$
 - Step sizes: h = 0.2, 0.1, 0.05
 
 Error analysis:
@@ -41,8 +41,8 @@ Convergence analysis:
 ## Numerical Results
 ### Explicit Euler
 Error ratios at $x = 10$:
-- $h = 0.2 \to 0.1: 1.9933$  
-- $h = 0.1 \to 0.05: 1.9964$ 
+- $h = 0.2 \to 0.1:  \quad  1.9933 \approx 2$  
+- $h = 0.1 \to 0.05:  \quad 1.9964 \approx 2$ 
 
 These confirm first-order convergence.
 
@@ -52,8 +52,8 @@ Relative error:
  ![Euler error](images/euler_relative_error.png)
 ### Crank–Nicolson
 Error ratios at $x = 10$:
-- $h = 0.2 \to 0.1: \approx 4.0$  
-- $h = 0.1 \to 0.05: \approx 4.0 $ 
+- $h = 0.2 \to 0.1: \quad   3.9867  \approx 4.0 $ 
+- $h = 0.1 \to 0.05:  \quad  3.9854 \approx 4.0 $ 
 
 These confirm second-order convergence.
 
